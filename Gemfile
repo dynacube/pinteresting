@@ -18,7 +18,11 @@ gem 'bootstrap-sass'
 
 gem 'sdoc', '~> 0.4.0',
 
-group :test :development do
+group :test do
+  gem 'sqlite3'
+end
+
+group :development do
   gem 'sqlite3'
 end
 
