@@ -48,7 +48,7 @@ config.paperclip_defaults = {
   }
 }
 
-  #Paperclip.options[:command_path] = '/c/Windows/system32/convert'
-  #Paperclip.options[:command_path] = 'C:\Program Files\ImageMagick-6.9.1-Q16'
-  #Paperclip.options[:command_path] = 'C:\Program Files (x86)\GnuWin32\bin'
+  Paperclip.options[:command_path] = '/c/Windows/system32/convert'
+  Paperclip.options[:command_path] = 'C:\Program Files\ImageMagick-6.9.1-Q16'
+  Paperclip.options[:command_path] = 'C:\Program Files (x86)\GnuWin32\bin'
 end
