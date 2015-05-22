@@ -39,15 +39,15 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   # config/environments/production.rb
-config.paperclip_defaults = {
-  :storage => :s3,
-  :s3_credentials => {
-    :bucket => ENV['S3_BUCKET_NAME'],
-    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'],
-    :region => 'us-west-2'
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['S3_BUCKET_NAME'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+      :region => 'us-west-2'
+    }
   }
-}
 
   Paperclip.options[:command_path] = '/c/Windows/system32/convert'
   Paperclip.options[:command_path] = 'C:\Program Files\ImageMagick-6.9.1-Q16'
