@@ -78,4 +78,8 @@ Rails.application.configure do
 
   #Required for Heroku
   config.action_mailer.default_url_options = { :host => 'dyna-cube-omr.herokuapp.com' }
+
+#  Paperclip.options[:command_path] = 'C:\Windows\system32\convert'
+#  Paperclip.options[:command_path] = 'C:\Program Files\ImageMagick-6.9.1-Q16'
+#  Paperclip.options[:command_path] = 'C:\Program Files (x86)\GnuWin32\bin'
 end
